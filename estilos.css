@@ -1,0 +1,282 @@
+#titulos{
+    width: 500px;
+    border: solid black 20px;
+}
+
+
+#cabecera{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#cabecera #imagenCabecera{
+    width: 120px;
+    height: 150px;
+
+}
+#cabecera #imagenTitulo{
+    padding: 30px;
+    width: 300px;
+    height: 100px;
+}
+
+
+h3{
+    text-align: center;
+    overflow:hidden !important;
+    text-overflow: ellipsis;
+}
+
+h5{
+    overflow:hidden !important;
+    text-overflow: ellipsis;
+    text-align: center;
+    color: red;
+}
+
+#form{
+    display: block;
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    width: 400px;
+    height: 70px;
+    font-family: Georgia, 'Times New Roman', serif;
+    
+}
+
+#search{
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    width: 190px;
+}
+
+input{
+    margin: 10px;
+   
+   
+}
+
+button {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    -webkit-webkit: border radius 5px;
+    -moz-webkit: border radius 5px;
+    -ms-webkit: border radius 5px;
+    -o-webkit: border radius 5px;
+    margin-top:5px;
+    text-decoration:none;
+    font-weight:500;
+    font-size:18px;
+    color:#030163;
+    background-color:#7575fd;
+    
+}
+
+button:hover {
+    font-size:22px;
+}
+
+#resultados{
+    color:#030163;
+    font-family:'Segoe UI';
+    font-size: 23px;
+    width: 1200px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color:darkgrey;
+    padding: 5px;
+    margin: auto;
+    display: block;
+}
+
+
+#contenedor{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+a{
+    display:block;
+    text-align:center;
+    margin-bottom: 4px;
+}
+
+.libros{
+    width: 265px;
+    height: 35%;
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    background-color:#dfdfe3;
+    white-space:nowrap;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.libros h3{
+    margin: 13px;
+    color:#030163;
+    width: 100%;
+    
+}
+
+.libros h5{
+    text-transform: uppercase;
+    font-family:'Segoe UI';
+   
+    width: 100%;
+}
+
+.libros .portadaLibro{
+    width: 90%;
+    height: 300px;
+    display: block;
+    margin: auto;
+    padding: 4px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+
+}
+
+.libros .popup-link{
+    text-decoration: none;
+    margin-bottom: 15px;
+    color: black;
+    font-size: 14px;
+    font-family:'Segoe UI';
+    width: 100%;
+    
+
+}
+
+.libros .popup-link:hover{
+    color: darkred;
+    font-size: 1.01em;
+
+}
+
+#popup {
+    visibility: hidden;
+    opacity: 0;
+    margin-top: -300px;
+}
+
+#popup:target {
+    visibility:visible;
+    opacity:1 ;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:0;
+    z-index: 999;
+    transition:all 1s;
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -ms-transition:all 1s;
+    -o-transition:all 1s;
+}
+
+.popup-contenedor {
+    position: relative;
+    margin:7% auto;
+    padding:30px 50px;
+    background-color: #fafafa;
+    color:#333;
+    border-radius: 3px;
+    width:50%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family:'Segoe UI';
+   
+    
+}
+a.popup-cerrar {
+    position: absolute;
+    top:3px;
+    right:3px;
+    background-color: #333;
+    padding:7px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 1;
+    color:#fff;
+}
+
+.popup-contenedor h2{
+    color: #030163;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color:darkgrey;
+    padding: 5px;
+    margin-top: auto;
+}
+
+.popup-contenedor h4{
+    text-align: center;
+    width: 100%;
+    color: red;
+    margin: 0;
+    margin-bottom: 5px; 
+}
+
+.popup-contenedor h5{
+    width: 100%;
+    color: black;
+    margin: 0;
+    margin-bottom: 0.3em;
+    text-align: left;
+}
+
+.popup-contenedor .enlace{
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    color: blue;
+}
+
+.popup-contenedor img{
+    width: 15%;
+    height: 45%;
+    float: left;
+    margin-top: 10px;
+
+}
+.popup-contenedor p{
+   width: 80%;
+   padding: 10px;
+   height: auto;
+   margin: 0;
+   margin-top: 10px;
+   margin-left: 15px;
+   background-color: #dfdfe3;
+   border-radius:0.5em;
+   -webkit-border-radius:0.5em;
+   -moz-border-radius:0.5em;
+   -ms-border-radius:0.5em;
+   -o-border-radius:0.5em;
+}
+
+
+
+#gif{
+    margin: auto;
+    display: block;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <meta charset="utf-8">
+            <title>Proyecto Libros</title>
+            <link rel="stylesheet" type="text/css" href="estilos.css">
+            <script src="./jquery-3.3.1.min.js"></script>
+            <script type="text/javascript" src="main.js"></script>
+            
+        </head>
+    <body onload="novedades()">
+        <div id="cabecera"> <!-- cabecera de la pagina -->
+            <img id="imagenCabecera" src="./imagenes/imagenLibros.png" title="Inicio" alt="Volver A Inicio" onclick="novedades()">
+            <img id="imagenTitulo" src="./imagenes/googlebooks.png" title="Inicio" alt="Volver A Inicio" onclick="novedades()">
+        </div>
+        
+        <div id="form">
+            <input type="text" id="search" placeholder="Buscar por Titulo/Autor">  <!-- buscador de la pagina -->
+            <input type="radio" name="books"  value="title" checked> Titulo  <!-- radiobutton para elegir lo que quieres buscar -->
+            <input type="radio" name="books" value="author"> Autor<br>	    	
+            <button onclick="buscadorLibros()">Buscar</button>  <!-- boton buscar-->
+        </div>
+        <h3 id="resultados">RESULTADOS</h3>
+        <div id="contenedor"></div>
+        <img src="./imagenes/cargando.gif" id="gif" hidden>  <!-- aparece mientras salen los siguientes resultados -->
+    </body>
+</html>
+
+
+    
